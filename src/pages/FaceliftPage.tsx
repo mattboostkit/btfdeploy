@@ -184,21 +184,18 @@ const FaceliftPage: React.FC = () => {
               A Less Invasive Approach to Rejuvenation
             </p>
           </div>
-          {/* Placeholder Image */}
+          {/* Adjusted Image Display */}
           <div className="mt-12 mb-8">
             <div className="bg-gray-100 rounded-lg overflow-hidden shadow-md mx-auto max-w-4xl">
-              <div className="h-96 relative">
-                <img
-                  src={apexFaceliftImage}
-                  alt="Apex Facelift® procedure"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-r from-primary-500/10 to-secondary-800/10"></div>
-              </div>
+              <img
+                src={apexFaceliftImage}
+                alt="Apex Facelift® procedure"
+                className="w-full object-cover"
+              />
             </div>
             <p className="text-center text-sm text-gray-500 mt-2">The innovative Apex Facelift® procedure</p>
           </div>
-          {/* End Placeholder Image */}
+          {/* End Adjusted Image Display */}
           <div className="mt-12 max-w-4xl mx-auto text-lg text-gray-600 space-y-6">
             <p>
               If you find yourself pulling your skin back in the mirror, it might be time to consider a facelift. The Apex Facelift®, developed by Mr Coombes, is a less invasive alternative to traditional facelifts—performed under local anaesthetic with minimal downtime.

@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 const Hero: React.FC = () => {
   return (
-    <div id="top" className="relative bg-gray-50 overflow-hidden h-[500px] sm:h-[600px] md:h-[700px] lg:h-[800px]">
-      <div className="absolute inset-0">
+    <div id="top" className="relative bg-gray-50 overflow-hidden h-[500px] sm:h-[600px] md:h-[700px] lg:h-[800px] pt-20 md:pt-28">
+      <div className="absolute inset-0 top-[80px] md:top-[112px]">
         <img
           src="https://ik.imagekit.io/boostkit/Beyond%20The%20Face/BTF_Hero.avif?updatedAt=1740599856547"
           alt="Beyond The Face aesthetics clinic"

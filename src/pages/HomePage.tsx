@@ -68,7 +68,7 @@ const HomePage: React.FC = () => {
   };
 
   return (
-    <div id="top">
+    <div id="top" className="relative">
       <SEO
         title="Premium Aesthetics Clinic in Tunbridge Wells"
         description="Beyond The Face is Tunbridge Wells' premier aesthetics clinic, offering advanced, non-invasive treatments designed to enhance your natural beauty and boost your confidence."

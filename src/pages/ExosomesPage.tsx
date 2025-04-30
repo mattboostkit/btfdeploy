@@ -2,6 +2,7 @@ import React from 'react';
 import { MapPin, Phone, Mail, Award, Shield, CheckCircle } from 'lucide-react';
 import GallerySection from '../components/GallerySection';
 import FAQSection from '../components/FAQSection'; // Import the reusable FAQ component
+import BookingSection from '../components/BookingSection'; // Import the BookingSection component
 import SEO from '../components/SEO';
 
 const ExosomesPage: React.FC = () => {
@@ -135,78 +136,10 @@ const ExosomesPage: React.FC = () => {
 
       <FAQSection />
 
-      {/* Contact/Book Section */}
-      <section className="py-16 bg-primary-400">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div className="text-white">
-              <h2 className="text-3xl font-serif font-bold sm:text-4xl">
-                Book Your Consultation
-              </h2>
-              <p className="mt-4 text-xl">
-                Transform your skin with Tunbridge Wells' most advanced regenerative treatment.
-              </p>
-
-              <div className="mt-8 space-y-6">
-                <div className="flex items-start">
-                  <MapPin className="h-6 w-6 text-white mr-3 mt-1" />
-                  <div>
-                    <p className="font-medium">Visit us at:</p>
-                    <p className="mt-1">
-                      19 Vale Road<br />
-                      Tunbridge Wells<br />
-                      Kent TN1 1BS
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start">
-                  <Phone className="h-6 w-6 text-white mr-3 mt-1" />
-                  <div>
-                    <p className="font-medium">Phone</p>
-                    <p className="mt-1">+44 7717 633418</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start">
-                  <Mail className="h-6 w-6 text-white mr-3 mt-1" />
-                  <div>
-                    <p className="font-medium">Email</p>
-                    <p className="mt-1">maryna@beyondtheface.co.uk</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="mt-8 flex space-x-4">
-                <div className="flex items-center">
-                  <Award className="h-5 w-5 text-white mr-2" />
-                  <span>GMC-registered practitioners</span>
-                </div>
-                <div className="flex items-center">
-                  <Shield className="h-5 w-5 text-white mr-2" />
-                  <span>CQC-approved clinic</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white p-8 rounded-lg shadow-lg">
-              <h3 className="text-xl font-medium text-gray-900 mb-6">Schedule Your Consultation</h3>
-              <div className="h-[400px] border-0 w-full">
-                {/* Placeholder for GoHighLevel Calendar Integration */}
-                <div className="border border-gray-300 rounded-md h-full flex items-center justify-center bg-gray-50">
-                  <div className="text-center p-4">
-                    <p className="text-gray-500 mb-4">Appointment booking calendar will be embedded here.</p>
-                    <p className="text-sm text-gray-400">Select your preferred date and time for your exosome treatment consultation.</p>
-                    <button className="mt-4 bg-primary-400 text-white py-2 px-4 rounded-md hover:bg-primary-500 transition-colors">
-                      Book Consultation
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Booking Section */}
+      <div id="booking" className="scroll-mt-32">
+        <BookingSection />
+      </div>
     </div>
   );
 };

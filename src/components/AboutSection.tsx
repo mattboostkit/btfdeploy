@@ -1,8 +1,5 @@
 import React from 'react';
 import { Award, Users, Shield } from 'lucide-react';
-import aboutImage from '../assets/images/BTF_About2.jpg'; // Import the about image
-import clinicExteriorImage from '../assets/images/BTF_External.jpg'; // Import the clinic exterior image
-import clinicInteriorImage from '../assets/images/BTF_Internal.jpg'; // Import the clinic interior image
 
 const AboutSection: React.FC = () => {
   return (
@@ -29,7 +26,7 @@ const AboutSection: React.FC = () => {
           <div className="bg-gray-100 rounded-lg overflow-hidden shadow-md mx-auto max-w-4xl">
             <div className="h-96 relative">
               <img
-                src={aboutImage} // Use the imported about image
+                src="/images/BTF_About2.jpg"
                 alt="Maryna Cole, Founder of Beyond The Face"
                 className="w-full h-full object-cover"
               />
@@ -46,7 +43,7 @@ const AboutSection: React.FC = () => {
           <div className="bg-gray-100 rounded-lg overflow-hidden shadow-md mx-auto max-w-4xl">
             <div className="h-96 relative">
               <img
-                src={clinicExteriorImage}
+                src="/images/BTF_External.jpg"
                 alt="Beyond The Face clinic exterior"
                 className="w-full h-full object-cover"
               />
@@ -63,7 +60,7 @@ const AboutSection: React.FC = () => {
           <div className="bg-gray-100 rounded-lg overflow-hidden shadow-md mx-auto max-w-4xl">
             <div className="h-96 relative">
               <img
-                src={clinicInteriorImage}
+                src="/images/BTF_Internal.jpg"
                 alt="Beyond The Face clinic interior"
                 className="w-full h-full object-cover"
               />

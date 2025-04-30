@@ -1,7 +1,7 @@
 import React from 'react';
 import { Award, Users, Shield } from 'lucide-react';
 import aboutImage from '../assets/images/BTF_About2.jpg'; // Import the about image
-import clinicExteriorImage from '../assets/images/External Clinic.jpg'; // Import the clinic exterior image
+import clinicExteriorImage from '../assets/images/BTF_External.jpg'; // Import the clinic exterior image
 
 const AboutSection: React.FC = () => {
   return (

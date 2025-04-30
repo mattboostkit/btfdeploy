@@ -90,9 +90,10 @@ const FaceliftPage: React.FC = () => {
   return (
     <div id="top" className="pt-20 bg-gray-50">
       <SEO
-        title="Apex Facelift®"
-        description="Learn about our advanced Apex Facelift® procedure, a refined, less invasive alternative to traditional facelift surgery designed by Mr Coombes."
+        title="Non-Surgical Facelift in Kent | Apex Facelift® Tunbridge Wells"
+        description="Discover our advanced Apex Facelift® procedure in Tunbridge Wells, a refined, less invasive alternative to traditional facelift surgery. Experience natural-looking facial rejuvenation with minimal downtime."
         canonicalUrl="/facelifts"
+        keywords="Non-surgical facelift Kent, Jawline contouring Kent, Nasolabial fold treatment Tunbridge Wells, Anti-ageing clinic Tonbridge, Advanced aesthetics Tonbridge, Skin rejuvenation Kent, Cosmetic treatments Tunbridge Wells, Medical aesthetics Kent, Private aesthetics in Kent, Aesthetics Tunbridge Wells"
         structuredData={structuredData}
       />
       {/* Hero section */}

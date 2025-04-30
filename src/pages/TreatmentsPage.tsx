@@ -33,9 +33,10 @@ const TreatmentsPage: React.FC = () => {
   return (
     <div id="top" className="pt-20 bg-gray-50">
       <SEO
-        title="Aesthetic Treatments"
-        description="Discover our comprehensive range of aesthetic treatments designed to enhance your natural beauty, including exosome therapy, microneedling, and more."
+        title="Advanced Aesthetic Treatments in Tunbridge Wells & Kent | Beyond The Face"
+        description="Discover our comprehensive range of aesthetic treatments in Tunbridge Wells including Botox, lip fillers, Profhilo, microneedling, and non-surgical facelifts. Expert treatments delivered by qualified practitioners in Kent."
         canonicalUrl="/treatments"
+        keywords="Botox Tunbridge Wells, Lip fillers Kent, Profhilo Tunbridge Wells, Cheek filler Tonbridge, Chin filler Kent, Nasolabial fold treatment Tunbridge Wells, Jawline contouring Kent, Non-surgical facelift Kent, Lip enhancement Tonbridge, Under eye filler Kent, Microneedling Tunbridge Wells, Chemical peel Tonbridge, Skin rejuvenation Kent, Cosmetic treatments Tunbridge Wells"
         structuredData={structuredData}
       />
       <div className="bg-gradient-to-r from-primary-500 to-secondary-700 text-white py-16">

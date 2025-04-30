@@ -70,9 +70,10 @@ const HomePage: React.FC = () => {
   return (
     <div id="top" className="relative">
       <SEO
-        title="Premium Aesthetics Clinic in Tunbridge Wells"
-        description="Beyond The Face is Tunbridge Wells' premier aesthetics clinic, offering advanced, non-invasive treatments designed to enhance your natural beauty and boost your confidence."
+        title="Premium Aesthetics Clinic in Tunbridge Wells | Beyond The Face"
+        description="Beyond The Face is Tunbridge Wells' premier aesthetics clinic, offering advanced, non-invasive treatments including Botox, lip fillers, Profhilo and microneedling in Kent. Visit our luxury clinic for personalised aesthetic treatments."
         canonicalUrl="/"
+        keywords="Aesthetic clinic Tunbridge Wells, Botox Tunbridge Wells, Lip fillers Kent, Profhilo Tunbridge Wells, Skin boosters Kent, Anti-wrinkle injections Tunbridge Wells, Medical aesthetics Kent, Aesthetics Tunbridge Wells, Skin clinic Tunbridge Wells, Best Botox in Tunbridge Wells, Non-surgical treatments Tonbridge, Advanced aesthetics Tonbridge"
         structuredData={structuredData}
       />
       <Hero />

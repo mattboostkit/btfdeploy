@@ -7,6 +7,7 @@ interface SEOProps {
   canonicalUrl?: string;
   ogType?: string;
   ogImage?: string;
+  keywords?: string;
   structuredData?: any;
 }
 
@@ -16,6 +17,7 @@ const SEO: React.FC<SEOProps> = ({
   canonicalUrl,
   ogType = 'website',
   ogImage = '/favicons/android-chrome-512x512.png',
+  keywords,
   structuredData,
 }) => {
   const siteUrl = 'https://beyondtheface.co.uk';
@@ -28,6 +30,7 @@ const SEO: React.FC<SEOProps> = ({
       {/* Basic Meta Tags */}
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
+      {keywords && <meta name="keywords" content={keywords} />}
       
       {/* Canonical URL */}
       <link rel="canonical" href={fullCanonicalUrl} />

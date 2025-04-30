@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Phone, Mail, Award, Shield, CheckCircle } from 'lucide-react';
+import { CheckCircle } from 'lucide-react';
 import GallerySection from '../components/GallerySection';
 import FAQSection from '../components/FAQSection'; // Import the reusable FAQ component
 import BookingSection from '../components/BookingSection'; // Import the BookingSection component
@@ -45,9 +45,10 @@ const ExosomesPage: React.FC = () => {
   return (
     <div id="top" className="pt-20 bg-gray-50">
       <SEO
-        title="Exosome Therapy"
-        description="Experience revolutionary skin regeneration with exosome therapy at Beyond The Face, Tunbridge Wells' premier aesthetics clinic."
+        title="Advanced Exosome Therapy in Tunbridge Wells | Skin Rejuvenation Kent"
+        description="Experience revolutionary skin regeneration with exosome therapy at Beyond The Face, Tunbridge Wells' premier aesthetics clinic. Our advanced treatments promote collagen production and natural skin rejuvenation."
         canonicalUrl="/exosomes"
+        keywords="Skin rejuvenation Kent, Advanced aesthetics Tonbridge, Skin clinic Tunbridge Wells, Anti-ageing clinic Tonbridge, Medical aesthetics Kent, Skin boosters Kent, Non-surgical treatments Tonbridge, Aesthetics Tunbridge Wells, Microneedling Tunbridge Wells, Private aesthetics in Kent"
         structuredData={structuredData}
       />
       {/* Hero section */}

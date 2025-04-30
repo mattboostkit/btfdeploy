@@ -68,9 +68,10 @@ const ContactPage: React.FC = () => {
   return (
     <div id="top" className="pt-20 bg-gray-50">
       <SEO
-        title="Contact Us"
-        description="Get in touch with Beyond The Face, Tunbridge Wells' premier aesthetics clinic. Book a consultation or ask us any questions about our treatments."
+        title="Contact Our Aesthetic Clinic in Tunbridge Wells | Book a Consultation"
+        description="Get in touch with Beyond The Face, Tunbridge Wells' premier aesthetics clinic. Book a consultation for Botox, lip fillers, Profhilo, or other treatments with our expert practitioners in Kent."
         canonicalUrl="/contact"
+        keywords="Aesthetic clinic Tunbridge Wells, Aesthetics clinic Tonbridge, Botox Tunbridge Wells, Lip fillers near Tunbridge Wells, Skin clinic Tunbridge Wells, Private aesthetics in Kent, Medical spa Kent, Best Botox in Tunbridge Wells, Aesthetic practitioner Kent, Book consultation Tunbridge Wells"
         structuredData={structuredData}
       />
       <div className="bg-gradient-to-r from-primary-500 to-secondary-700 text-white py-16">

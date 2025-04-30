@@ -2,6 +2,7 @@ import React from 'react';
 import { Award, Users, Shield } from 'lucide-react';
 import aboutImage from '../assets/images/BTF_About2.jpg'; // Import the about image
 import clinicExteriorImage from '../assets/images/BTF_External.jpg'; // Import the clinic exterior image
+import clinicInteriorImage from '../assets/images/BTF_Internal.jpg'; // Import the clinic interior image
 
 const AboutSection: React.FC = () => {
   return (
@@ -52,6 +53,23 @@ const AboutSection: React.FC = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-primary-500/10 to-secondary-800/10"></div>
               <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/70 to-transparent">
                 <p className="text-white font-serif text-xl">Our welcoming clinic exterior</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Clinic Interior Image */}
+        <div className="mt-12 mb-16">
+          <div className="bg-gray-100 rounded-lg overflow-hidden shadow-md mx-auto max-w-4xl">
+            <div className="h-96 relative">
+              <img
+                src={clinicInteriorImage}
+                alt="Beyond The Face clinic interior"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-primary-500/10 to-secondary-800/10"></div>
+              <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/70 to-transparent">
+                <p className="text-white font-serif text-xl">Our beautiful clinic interior</p>
               </div>
             </div>
           </div>

@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 
 const Hero: React.FC = () => {
   return (
-    <div id="top" className="relative bg-gray-50 overflow-hidden h-[600px] sm:h-[600px] md:h-[700px] lg:h-[800px]">
+    <div id="top" className="relative bg-gray-50 overflow-hidden h-[700px] sm:h-[700px] md:h-[800px] lg:h-[900px] pt-20 md:pt-28">
       {/* Background Image Container */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 top-[80px] md:top-[112px]">
         <img
           src="https://ik.imagekit.io/boostkit/Beyond%20The%20Face/BTF_Hero.avif?updatedAt=1740599856547"
           alt="Beyond The Face aesthetics clinic"
@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
       {/* Content Wrapper: Use flex to position content vertically */}
       {/* On mobile (flex-col): justify-end pushes content down, pb-16 adds space below buttons */}
       {/* On sm+ screens: justify-center centers content vertically */}
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-end pb-16 sm:justify-center sm:pb-0 items-start">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center pt-16 sm:pt-20 items-start">
         <div className="max-w-2xl bg-black/10 backdrop-blur-sm p-6 rounded-lg">
           <h1 className="text-4xl font-serif font-bold tracking-tight text-white sm:text-5xl lg:text-6xl drop-shadow-lg">
             Revealing Your True Beauty

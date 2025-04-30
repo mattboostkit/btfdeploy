@@ -7,6 +7,10 @@ export interface Treatment {
   duration: string;
   recovery: string;
   price?: string; // Made price optional
+  pricePackages?: {
+    threeSession: string;
+    fiveSession: string;
+  };
   image: string;
 }
 

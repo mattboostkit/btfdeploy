@@ -72,6 +72,19 @@ const ExosomesPage: React.FC = () => {
             </p>
           </div>
 
+          {/* Added Image Block */}
+          <div className="mt-12 mb-8">
+            <div className="bg-gray-100 rounded-lg overflow-hidden shadow-md mx-auto max-w-4xl">
+              <img
+                src="https://ik.imagekit.io/boostkit/Beyond%20The%20Face/Exosomes.avif"
+                alt="Exosome therapy treatment"
+                className="w-full h-auto object-cover"
+              />
+            </div>
+            <p className="text-center text-sm text-gray-500 mt-2">Advanced Exosome Therapy at Beyond The Face</p>
+          </div>
+          {/* End Added Image Block */}
+
           <div className="mt-16">
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
               <div className="bg-gray-50 p-8 rounded-lg shadow-sm">

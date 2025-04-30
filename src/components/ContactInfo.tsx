@@ -40,14 +40,20 @@ const ContactInfo: React.FC = () => {
             <Clock className="h-6 w-6 text-primary-500 mr-3 mt-1" />
             <div>
               <p className="font-medium text-gray-900">Opening Hours</p>
-              <div className="text-gray-600 mt-1">
-                <div className="grid grid-cols-2 gap-2">
-                  <p>Monday - Friday:</p>
-                  <p>9am - 7pm</p>
-                  <p>Saturday:</p>
-                  <p>10am - 5pm</p>
-                  <p>Sunday:</p>
-                  <p>Closed</p>
+              <div className="text-gray-600 mt-3">
+                <div className="mb-3">
+                  <p className="font-medium">Massage / Facials</p>
+                  <p>Monday: 9:30am - 3:30pm</p>
+                </div>
+                <div className="mb-3">
+                  <p className="font-medium">Injectables</p>
+                  <p>Tuesday: 10am - 6pm</p>
+                </div>
+                <div>
+                  <p className="font-medium">Facials</p>
+                  <p>Wednesday: 9:30am - 3:30pm</p>
+                  <p>Thursday: 9:30am - 3:30pm</p>
+                  <p>Friday: 9:30am - 3:00pm</p>
                 </div>
               </div>
             </div>

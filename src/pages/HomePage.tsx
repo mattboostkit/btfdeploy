@@ -29,15 +29,38 @@ const HomePage: React.FC = () => {
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        "opens": "09:00",
-        "closes": "19:00"
+        "dayOfWeek": "Monday",
+        "opens": "09:30",
+        "closes": "15:30",
+        "description": "Massage / Facials"
       },
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": "Saturday",
+        "dayOfWeek": "Tuesday",
         "opens": "10:00",
-        "closes": "17:00"
+        "closes": "18:00",
+        "description": "Injectables"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Wednesday",
+        "opens": "09:30",
+        "closes": "15:30",
+        "description": "Facials"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Thursday",
+        "opens": "09:30",
+        "closes": "15:30",
+        "description": "Facials"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Friday",
+        "opens": "09:30",
+        "closes": "15:00",
+        "description": "Facials"
       }
     ],
     "image": "https://beyondtheface.co.uk/favicons/android-chrome-512x512.png",

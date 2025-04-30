@@ -3,7 +3,7 @@ import exosomesImage from '../assets/images/Exosomes_2.jpg';
 import exosomesWithMassageImage from '../assets/images/Exosomes.jpg';
 import ledTherapyImage from '../assets/images/LED Light Therapy.jpg';
 import environImage from '../assets/images/Environ.jpg?v=2';
-import antiWrinkleImage from '../assets/images/Anti-Wrinkle Treatment.jpg';
+import antiWrinkleImage from '../assets/images/Anti-Wrinkle Treatment.jpg'; // TODO: Rename image file to Botox.jpg
 import lipEnhancementImage from '../assets/images/Lip Enhancement.jpg';
 import polynucleotidesImage from '../assets/images/Polynucleotides.jpg';
 import profhiloImage from '../assets/images/Profhilo.jpg?v=2';
@@ -19,6 +19,10 @@ export const treatments: Treatment[] = [
     expectedResults: 'Reduced appearance of scars, wrinkles, and enlarged pores. Improved skin texture and firmness.',
     duration: '150 minutes',
     recovery: 'Immediate results. No downtime. Up to 24hrs slight redness',
+    pricePackages: {
+      threeSession: '1500',
+      fiveSession: '2000'
+    },
     image: exosomesWithMassageImage
   },
   {
@@ -29,6 +33,10 @@ export const treatments: Treatment[] = [
     expectedResults: 'Reduced appearance of scars, wrinkles, and enlarged pores. Improved skin texture and firmness.',
     duration: '90 minutes',
     recovery: 'Immediate results. No downtime. Up to 24hrs slight redness',
+    pricePackages: {
+      threeSession: '1200',
+      fiveSession: '1600'
+    },
     image: exosomesImage
   },
   { // Updated Chemical Peel to Environ Skin Peel
@@ -39,6 +47,10 @@ export const treatments: Treatment[] = [
     expectedResults: 'Improved skin texture, clarity, and radiance. Addresses specific skin concerns like ageing, pigmentation, or acne.', // Kept relevant expected results
     duration: '60-75 minutes', // Updated duration
     recovery: 'Minimal downtime, possible slight redness for a few hours.', // Updated recovery
+    pricePackages: {
+      threeSession: '450',
+      fiveSession: '600'
+    },
     image: environImage
   },
   {
@@ -49,6 +61,10 @@ export const treatments: Treatment[] = [
     expectedResults: 'Improved skin tone, reduced inflammation, and accelerated healing. Best results after a series of treatments.',
     duration: '20 minutes',
     recovery: 'No downtime required.',
+    pricePackages: {
+      threeSession: '150',
+      fiveSession: '200'
+    },
     image: ledTherapyImage
   },
   {
@@ -59,27 +75,21 @@ export const treatments: Treatment[] = [
     expectedResults: 'Improved circulation, reduced muscle tension, enhanced skin tone, and overall relaxation.',
     duration: '30 minutes',
     recovery: 'No downtime required. Drink plenty of water after treatment.',
-    image: placeholderImage
+    pricePackages: {
+      threeSession: '150',
+      fiveSession: '200'
+    },
+    image: 'https://ik.imagekit.io/boostkit/Beyond%20The%20Face/Massage.avif?updatedAt=1745947769415'
   },
   {
     id: '1',
-    name: 'Anti-Wrinkle Treatment',
+    name: 'Botox',
     category: 'Injectables',
     description: 'This treatment works by relaxing specific facial muscles responsible for the formation of fine lines and wrinkles, particularly on the forehead and around the eyes. By reducing muscle movement in targeted areas, it helps create a smoother, more youthful appearance.',
     expectedResults: 'Visible reduction in fine lines and wrinkles, with results typically lasting 3–4 months.',
     duration: '30 minutes',
     recovery: 'No downtime required. Avoid lying down for 4 hours after treatment.',
     image: antiWrinkleImage
-  },
-  {
-    id: '2',
-    name: 'Dermal Fillers',
-    category: 'Injectables',
-    description: 'Dermal fillers are gel-like substances that are injected beneath the skin to restore lost volume, smooth lines, soften creases, or enhance facial contours.',
-    expectedResults: 'Instantly restored volume and smoothed away facial wrinkles and folds. Results last 6-18 months depending on the area treated.',
-    duration: '45 minutes',
-    recovery: 'Common side effects: swelling, bruising, tenderness. Allow 4-7 days for healing and recovery.',
-    image: placeholderImage
   },
   {
     id: '6',

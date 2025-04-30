@@ -62,12 +62,23 @@ const Footer: React.FC = () => {
           <div className="space-y-4">
             <h4 className="text-lg font-medium text-primary-300">Opening Hours</h4>
             <ul className="space-y-2">
-              <li className="flex items-center">
-                <Clock size={18} className="mr-2 text-primary-300 flex-shrink-0" />
+              <li className="flex items-start">
+                <Clock size={18} className="mr-2 text-primary-300 flex-shrink-0 mt-1" />
                 <div>
-                  <p className="text-gray-300">Monday - Friday: 9am - 7pm</p>
-                  <p className="text-gray-300">Saturday: 10am - 5pm</p>
-                  <p className="text-gray-300">Sunday: Closed</p>
+                  <div className="mb-2">
+                    <p className="text-gray-300 font-medium">Massage / Facials</p>
+                    <p className="text-gray-300">Monday: 9:30am - 3:30pm</p>
+                  </div>
+                  <div className="mb-2">
+                    <p className="text-gray-300 font-medium">Injectables</p>
+                    <p className="text-gray-300">Tuesday: 10am - 6pm</p>
+                  </div>
+                  <div className="mb-2">
+                    <p className="text-gray-300 font-medium">Facials</p>
+                    <p className="text-gray-300">Wednesday: 9:30am - 3:30pm</p>
+                    <p className="text-gray-300">Thursday: 9:30am - 3:30pm</p>
+                    <p className="text-gray-300">Friday: 9:30am - 3:00pm</p>
+                  </div>
                 </div>
               </li>
             </ul>

@@ -1,25 +1,24 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import heroImage from '../assets/images/BTF_Hero.avif'; // Import the new hero image
 
 const Hero: React.FC = () => {
   return (
-    <div id="top" className="relative bg-gray-50 overflow-hidden">
+    <div id="top" className="relative bg-gray-50 overflow-hidden h-[500px] sm:h-[600px] md:h-[700px] lg:h-[800px]">
       <div className="absolute inset-0">
         <img
-          src={heroImage} // Use the imported hero image
-          alt="Aesthetics clinic"
-          className="w-full h-full object-cover"
+          src="https://ik.imagekit.io/boostkit/Beyond%20The%20Face/BTF_Hero.avif?updatedAt=1740599856547"
+          alt="Beyond The Face aesthetics clinic"
+          className="w-full h-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary-500/80 to-secondary-800/50 mix-blend-multiply" />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary-500/60 to-secondary-800/50 mix-blend-multiply" />
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-4 py-40 sm:px-6 lg:px-8 lg:py-64"> {/* Increased vertical padding */}
-        <div className="max-w-2xl">
-          <h1 className="text-4xl font-serif font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-start">
+        <div className="max-w-2xl bg-black/10 backdrop-blur-sm p-6 rounded-lg">
+          <h1 className="text-4xl font-serif font-bold tracking-tight text-white sm:text-5xl lg:text-6xl drop-shadow-lg">
             Revealing Your True Beauty
           </h1>
-          <p className="mt-6 text-xl text-white">
+          <p className="mt-6 text-xl text-white drop-shadow-md">
             Beyond The Face is Tunbridge Wells' premier aesthetics clinic, offering advanced, non-invasive treatments
             designed to enhance your natural beauty and boost your confidence. Experience transformation at the cellular level.
           </p>

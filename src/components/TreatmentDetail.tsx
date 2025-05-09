@@ -41,18 +41,12 @@ const TreatmentDetail: React.FC<TreatmentDetailProps> = ({ treatment }) => {
               </div>
             </div>
 
-            {(treatment.price || treatment.pricePackages) && ( // Conditionally render price block
+            {treatment.price && (
               <div className="flex items-center p-3 bg-gradient-to-r from-gray-50 to-white rounded-lg border border-gray-100 shadow-sm">
                 <PoundSterling className="h-5 w-5 text-primary-500 mr-2" />
                 <div>
-                  <p className="text-sm text-gray-500">Price</p>
-                  {treatment.price && <p className="font-medium">{treatment.price}</p>}
-                  {treatment.pricePackages && (
-                    <div className="font-medium">
-                      <p>3 treatments - £{treatment.pricePackages.threeSession}</p>
-                      <p>5 treatments - £{treatment.pricePackages.fiveSession}</p>
-                    </div>
-                  )}
+                  <p className="text-sm text-gray-500">Price Per Treatment</p>
+                  <p className="font-medium">£{treatment.price}</p>
                 </div>
               </div>
             )}

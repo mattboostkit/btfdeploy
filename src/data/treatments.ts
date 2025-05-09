@@ -2,13 +2,10 @@ import { Treatment } from '../types';
 import exosomesImage from '../assets/images/Exosomes_2.jpg';
 import exosomesWithMassageImage from '../assets/images/Exosomes.jpg';
 import ledTherapyImage from '../assets/images/LED Light Therapy.jpg';
-import environImage from '../assets/images/Environ.jpg?v=2';
+import environImage from '../assets/images/Environ.jpg';
 import antiWrinkleImage from '../assets/images/Anti-Wrinkle Treatment.jpg'; // TODO: Rename image file to Botox.jpg
 import lipEnhancementImage from '../assets/images/Lip Enhancement.jpg';
-import polynucleotidesImage from '../assets/images/Polynucleotides.jpg';
-import profhiloImage from '../assets/images/Profhilo.jpg?v=2';
-
-const placeholderImage = 'https://images.unsplash.com/photo-1557682250-33bd709cbe85?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60'; // Generic placeholder
+import dermalFillersImage from '../assets/images/Dermal Fillers.avif';
 
 export const treatments: Treatment[] = [
   {
@@ -19,10 +16,7 @@ export const treatments: Treatment[] = [
     expectedResults: 'Reduced appearance of scars, wrinkles, and enlarged pores. Improved skin texture and firmness.',
     duration: '150 minutes',
     recovery: 'Immediate results. No downtime. Up to 24hrs slight redness',
-    pricePackages: {
-      threeSession: '1500',
-      fiveSession: '2000'
-    },
+    price: '500',
     image: exosomesWithMassageImage
   },
   {
@@ -33,24 +27,18 @@ export const treatments: Treatment[] = [
     expectedResults: 'Reduced appearance of scars, wrinkles, and enlarged pores. Improved skin texture and firmness.',
     duration: '90 minutes',
     recovery: 'Immediate results. No downtime. Up to 24hrs slight redness',
-    pricePackages: {
-      threeSession: '1200',
-      fiveSession: '1600'
-    },
+    price: '400',
     image: exosomesImage
   },
-  { // Updated Chemical Peel to Environ Skin Peel
+  {
     id: '3',
-    name: 'Environ Skin Peel', // Updated name
+    name: 'Environ / Theraderm Skin Peel',
     category: 'Lifting and Tightening Skin Treatments',
-    description: 'Environ’s pioneering Dual Electro-Sonic Technology sets the benchmark for professional skincare treatments. Low frequency Sonophoresis together with pulsed Iontophoresis in combination with Environ’s professional skincare formulations, help to deliver what skin needs, where it needs it most – making a real lasting difference.', // Updated description
-    expectedResults: 'Improved skin texture, clarity, and radiance. Addresses specific skin concerns like ageing, pigmentation, or acne.', // Kept relevant expected results
-    duration: '60-75 minutes', // Updated duration
-    recovery: 'Minimal downtime, possible slight redness for a few hours.', // Updated recovery
-    pricePackages: {
-      threeSession: '450',
-      fiveSession: '600'
-    },
+    description: 'Environ’s pioneering Dual Electro-Sonic Technology sets the benchmark for professional skincare treatments. Low frequency Sonophoresis together with pulsed Iontophoresis in combination with Environ’s professional skincare formulations, help to deliver what skin needs, where it needs it most – making a real lasting difference. Theraderm Skin Peel provides a deeper exfoliation to reveal smoother, brighter skin.',
+    expectedResults: 'Improved skin texture, clarity, and radiance. Addresses specific skin concerns like ageing, pigmentation, or acne.',
+    duration: '60-75 minutes',
+    recovery: 'Minimal downtime, possible slight redness for a few hours.',
+    price: '150',
     image: environImage
   },
   {
@@ -61,10 +49,7 @@ export const treatments: Treatment[] = [
     expectedResults: 'Improved skin tone, reduced inflammation, and accelerated healing. Best results after a series of treatments.',
     duration: '20 minutes',
     recovery: 'No downtime required.',
-    pricePackages: {
-      threeSession: '150',
-      fiveSession: '200'
-    },
+    price: '50',
     image: ledTherapyImage
   },
   {
@@ -75,10 +60,7 @@ export const treatments: Treatment[] = [
     expectedResults: 'Improved circulation, reduced muscle tension, enhanced skin tone, and overall relaxation.',
     duration: '30 minutes',
     recovery: 'No downtime required. Drink plenty of water after treatment.',
-    pricePackages: {
-      threeSession: '150',
-      fiveSession: '200'
-    },
+    price: '50',
     image: 'https://ik.imagekit.io/boostkit/Beyond%20The%20Face/Massage.avif?updatedAt=1745947769415'
   },
   {
@@ -89,6 +71,7 @@ export const treatments: Treatment[] = [
     expectedResults: 'Visible reduction in fine lines and wrinkles, with results typically lasting 3–4 months.',
     duration: '30 minutes',
     recovery: 'No downtime required. Avoid lying down for 4 hours after treatment.',
+    price: '300',
     image: antiWrinkleImage
   },
   {
@@ -99,29 +82,20 @@ export const treatments: Treatment[] = [
     expectedResults: 'Fuller, more defined lips with improved symmetry. Results last 6-12 months.',
     duration: '30 minutes',
     recovery: 'Common side effects: swelling, bruising, tenderness. Allow 4-7 days for healing and recovery.',
+    price: '250',
     image: lipEnhancementImage
   },
   {
-    id: '9',
-    name: 'Polynucleotides',
+    id: '11',
+    name: 'Dermal Fillers',
     category: 'Injectables',
-    description: 'A rejuvenating injectable gel derived from fish DNA, designed for use on the face, neck, and décolletage. Polynucleotides work by stimulating fibroblasts in the skin to boost collagen and elastin production, promoting a radiant, youthful complexion.',
-    expectedResults: 'Improved skin texture, increased hydration, and enhanced skin elasticity. Results develop over time and can last several months.',
-    duration: '90 minutes',
-    recovery: 'Slight swelling, tenderness, and light bruising from 24 hours to 4 days.',
-    image: polynucleotidesImage
-  },
-  {
-    id: '10',
-    name: 'Profhilo',
-    category: 'Injectables',
-    description: 'Profhilo Structura is an injectable skin treatment designed to restore and reposition superficial fat to its natural state and counteract the natural loss of tissue that occurs with age. It lifts and contours the face to reduce pronounced hollows and altered facial contours from midface fat loss. By using hyaluronic acid (HA), Profhilo Structura hydrates the skin to improve its quality and elasticity.',
-    expectedResults: 'Improved skin hydration, firmness, and elasticity with a more youthful appearance. Results typically last 6 months.',
-    duration: '90 minutes',
-    recovery: 'Minimal downtime, some light swelling could last up to 24 hours.',
-    image: profhiloImage
+    description: 'Dermal fillers help to diminish facial lines and restore volume and fullness in the face. As we age, our faces naturally lose subcutaneous fat. Dermal fillers can be used to plump thin lips, enhance shallow contours, soften facial creases and wrinkles, and improve the appearance of recessed scars.',
+    expectedResults: 'Restored volume, smoothed lines, and enhanced facial contours. Results can last from 6 months to over a year, depending on the filler used.',
+    duration: '45-60 minutes',
+    recovery: 'Some swelling, bruising, or redness may occur, typically subsiding within a few days.',
+    price: '380',
+    image: dermalFillersImage
   }
-  // Removed duplicate Environ Skin Peel (id: '7')
 ];
 
 export const categories = ['Lifting and Tightening Skin Treatments', 'Injectables'];

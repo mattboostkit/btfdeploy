@@ -6,11 +6,7 @@ export interface Treatment {
   expectedResults: string;
   duration: string;
   recovery: string;
-  price?: string; // Made price optional
-  pricePackages?: {
-    threeSession: string;
-    fiveSession: string;
-  };
+  price: string; // Price per treatment
   image: string;
 }
 

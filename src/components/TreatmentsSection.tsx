@@ -38,13 +38,7 @@ const TreatmentsSection: React.FC = () => {
                           <h4 className="text-lg font-medium text-gray-900 mb-2 hover:text-primary-500 transition-colors duration-200">{treatment.name}</h4>
                         </Link>
                         <p className="text-gray-500 mb-4 line-clamp-3">{treatment.description}</p>
-                        {treatment.price && <p className="text-primary-500 font-medium mb-4">{treatment.price}</p>}
-                        {treatment.pricePackages && (
-                          <div className="text-primary-500 font-medium mb-4">
-                            <p>3 treatments - £{treatment.pricePackages.threeSession}</p>
-                            <p>5 treatments - £{treatment.pricePackages.fiveSession}</p>
-                          </div>
-                        )}
+                        {treatment.price && <p className="text-primary-500 font-medium mb-4">£{treatment.price} per treatment</p>}
                         <Link
                           to={`/treatments#${treatment.id}`}
                           className="inline-flex items-center text-primary-500 hover:text-primary-600 group"

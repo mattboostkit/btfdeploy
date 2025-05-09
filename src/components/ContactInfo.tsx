@@ -47,7 +47,7 @@ const ContactInfo: React.FC = () => {
                 </div>
                 <div className="mb-3">
                   <p className="font-medium">Injectables</p>
-                  <p>Tuesday: 10am - 6pm</p>
+                  <p>Tuesday: 10am - 3pm</p>
                 </div>
                 <div>
                   <p className="font-medium">Facials</p>

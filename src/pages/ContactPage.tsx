@@ -2,7 +2,7 @@ import React from 'react';
 import ContactInfo from '../components/ContactInfo';
 import ContactForm from '../components/ContactForm';
 import GoogleMap from '../components/GoogleMap';
-import BookingSection from '../components/BookingSection';
+import BookingFlow from '../components/BookingFlow';
 import SEO from '../components/SEO';
 
 const ContactPage: React.FC = () => {
@@ -100,7 +100,7 @@ const ContactPage: React.FC = () => {
         </div>
 
         <div id="booking" className="scroll-mt-32 mb-16">
-          <BookingSection />
+          <BookingFlow />
         </div>
       </div>
     </div>

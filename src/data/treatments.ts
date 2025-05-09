@@ -6,6 +6,7 @@ import environImage from '../assets/images/Environ.jpg';
 import antiWrinkleImage from '../assets/images/Anti-Wrinkle Treatment.jpg'; // TODO: Rename image file to Botox.jpg
 import lipEnhancementImage from '../assets/images/Lip Enhancement.jpg';
 import dermalFillersImage from '../assets/images/Dermal Fillers.avif';
+import remedialMassageImage from '../assets/images/Massage.jpg';
 
 export const treatments: Treatment[] = [
   {
@@ -61,7 +62,7 @@ export const treatments: Treatment[] = [
     duration: '30 minutes',
     recovery: 'No downtime required. Drink plenty of water after treatment.',
     price: '50',
-    image: 'https://ik.imagekit.io/boostkit/Beyond%20The%20Face/Massage.avif?updatedAt=1745947769415'
+    image: remedialMassageImage
   },
   {
     id: '1',

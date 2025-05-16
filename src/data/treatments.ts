@@ -18,7 +18,8 @@ export const treatments: Treatment[] = [
     duration: '150 minutes',
     recovery: 'Immediate results. No downtime. Up to 24hrs slight redness',
     price: '500',
-    image: exosomesWithMassageImage
+    image: exosomesWithMassageImage,
+    requiresConsultation: true
   },
   {
     id: '7',
@@ -29,7 +30,8 @@ export const treatments: Treatment[] = [
     duration: '90 minutes',
     recovery: 'Immediate results. No downtime. Up to 24hrs slight redness',
     price: '400',
-    image: exosomesImage
+    image: exosomesImage,
+    requiresConsultation: true
   },
   {
     id: '3',
@@ -37,10 +39,11 @@ export const treatments: Treatment[] = [
     category: 'Lifting and Tightening Skin Treatments',
     description: 'Environ’s pioneering Dual Electro-Sonic Technology sets the benchmark for professional skincare treatments. Low frequency Sonophoresis together with pulsed Iontophoresis in combination with Environ’s professional skincare formulations, help to deliver what skin needs, where it needs it most – making a real lasting difference. Theraderm Skin Peel provides a deeper exfoliation to reveal smoother, brighter skin.',
     expectedResults: 'Improved skin texture, clarity, and radiance. Addresses specific skin concerns like ageing, pigmentation, or acne.',
-    duration: '60-75 minutes',
+    duration: '60 minutes',
     recovery: 'Minimal downtime, possible slight redness for a few hours.',
     price: '150',
-    image: environImage
+    image: environImage,
+    requiresConsultation: true
   },
   {
     id: '5',
@@ -48,7 +51,7 @@ export const treatments: Treatment[] = [
     category: 'Lifting and Tightening Skin Treatments',
     description: 'LED Light Therapy\nLEM Low-Level Light Therapy Device\nThe LEM is an advanced LED therapy device featuring red, blue, and yellow light settings, which can be used individually or in combination. It serves as an effective adjunct treatment for a range of skin rejuvenation concerns, including acne, pigmentation issues, and wound healing. It is also beneficial in supporting hair regrowth therapies.',
     expectedResults: 'Improved skin tone, reduced inflammation, and accelerated healing. Best results after a series of treatments.',
-    duration: '20 minutes',
+    duration: '30 minutes',
     recovery: 'No downtime required.',
     price: '50',
     image: ledTherapyImage
@@ -92,7 +95,7 @@ export const treatments: Treatment[] = [
     category: 'Injectables',
     description: 'Dermal fillers help to diminish facial lines and restore volume and fullness in the face. As we age, our faces naturally lose subcutaneous fat. Dermal fillers can be used to plump thin lips, enhance shallow contours, soften facial creases and wrinkles, and improve the appearance of recessed scars.',
     expectedResults: 'Restored volume, smoothed lines, and enhanced facial contours. Results can last from 6 months to over a year, depending on the filler used.',
-    duration: '45-60 minutes',
+    duration: '60 minutes',
     recovery: 'Some swelling, bruising, or redness may occur, typically subsiding within a few days.',
     price: '380',
     image: dermalFillersImage

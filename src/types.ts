@@ -8,6 +8,7 @@ export interface Treatment {
   recovery: string;
   price: string; // Price per treatment
   image: string;
+  requiresConsultation?: boolean;
 }
 
 export interface Testimonial {

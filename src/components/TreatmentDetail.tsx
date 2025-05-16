@@ -71,12 +71,32 @@ const TreatmentDetail: React.FC<TreatmentDetailProps> = ({ treatment }) => {
           </div>
 
           <div className="mt-8">
-            <Link
-              to="/contact"
-              className="inline-block bg-gradient-to-r from-primary-400 to-primary-500 text-white hover:from-primary-500 hover:to-primary-600 px-6 py-3 rounded-md text-base font-medium shadow-md transition-all duration-200 hover:shadow-lg transform hover:-translate-y-0.5"
-            >
-              Book This Treatment
-            </Link>
+            {treatment.requiresConsultation ? (
+              <>
+                <Link
+                  to="/contact#booking"
+                  className="mr-4 inline-block bg-gradient-to-r from-secondary-400 to-secondary-500 text-white hover:from-secondary-500 hover:to-secondary-600 px-6 py-3 rounded-md text-base font-medium shadow-md transition-all duration-200 hover:shadow-lg transform hover:-translate-y-0.5"
+                >
+                  Book A Consultation
+                </Link>
+                <Link
+                  to="/contact#booking"
+                  className="inline-block bg-gradient-to-r from-primary-400 to-primary-500 text-white hover:from-primary-500 hover:to-primary-600 px-6 py-3 rounded-md text-base font-medium shadow-md transition-all duration-200 hover:shadow-lg transform hover:-translate-y-0.5"
+                >
+                  Book This Treatment (After Consultation)
+                </Link>
+                <p className="mt-3 text-sm text-gray-600">
+                  You are required to have a £50 consultation which is redeemable against your first treatment before undergoing this treatment.
+                </p>
+              </>
+            ) : (
+              <Link
+                to="/contact#booking"
+                className="inline-block bg-gradient-to-r from-primary-400 to-primary-500 text-white hover:from-primary-500 hover:to-primary-600 px-6 py-3 rounded-md text-base font-medium shadow-md transition-all duration-200 hover:shadow-lg transform hover:-translate-y-0.5"
+              >
+                Book This Treatment
+              </Link>
+            )}
           </div>
         </div>
       </div>

@@ -188,6 +188,56 @@
   z-index: 1;
 }
 
+/* Ensure both calendar types have consistent styling */
+.booking-iframe-container iframe {
+  /* Ensure the iframe can be interacted with properly */
+  pointer-events: auto;
+  /* Allow the iframe content to be fully visible */
+  overflow: visible;
+  /* Ensure no clipping of navigation elements */
+  position: relative;
+  z-index: 1;
+  /* Consistent styling for both calendar types */
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Specific styling for the consultation calendar (booking widget) */
+.booking-iframe-container iframe[src*="booking"] {
+  /* Ensure proper display for booking widget */
+  min-height: 700px;
+}
+
+/* Specific styling for the treatments calendar (service-menu widget) */
+.booking-iframe-container iframe[src*="service-menu"] {
+  /* Ensure proper display for service menu widget */
+  min-height: 700px;
+  /* Force consistent width and prevent clipping */
+  width: 100% !important;
+  max-width: 100% !important;
+  /* Ensure consistent styling with booking widget */
+  background: white !important;
+  border-radius: 8px !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Additional fixes for service-menu widget on mobile */
+@media (max-width: 768px) {
+  .booking-iframe-container iframe[src*="service-menu"] {
+    /* Ensure the service menu widget has proper mobile display */
+    width: 100% !important;
+    max-width: 100% !important;
+    /* Force the widget to fit within the container */
+    transform: none !important;
+    /* Ensure no internal margins cause clipping */
+    margin: 0 !important;
+    padding: 0 !important;
+    /* Ensure proper overflow handling */
+    overflow: visible !important;
+  }
+}
+
 /* Additional mobile optimizations for calendar navigation */
 @media (max-width: 768px) {
   /* Ensure the calendar container doesn't clip navigation elements */
@@ -202,29 +252,48 @@
     overflow: visible;
     -webkit-overflow-scrolling: touch;
   }
-}
-
-/* Critical fix for calendar navigation buttons on mobile */
-@media (max-width: 768px) {
-  .booking-iframe-container {
-    /* Ensure the container has enough width for navigation */
-    width: 100%;
-    max-width: 100%;
-    padding: 0;
-    margin: 0;
-  }
   
-  .booking-iframe-container iframe {
-    /* Ensure iframe shows full calendar width */
+  /* Specific mobile fixes for service-menu widget */
+  .booking-iframe-container iframe[src*="service-menu"] {
+    /* Ensure full width on mobile */
     width: 100% !important;
     max-width: 100% !important;
-    /* Remove scaling - let the calendar be its natural size */
-    transform: none;
+    /* Remove any internal margins that might cause clipping */
+    margin: 0 !important;
+    padding: 0 !important;
   }
 }
 
-/* Extra small mobile devices */
-@media (max-width: 375px) {
+/* Ensure both calendar types have consistent mobile behavior */
+@media (max-width: 480px) {
+  .booking-iframe-container iframe {
+    /* Ensure both calendars have consistent mobile display */
+    width: 100% !important;
+    max-width: 100% !important;
+    transform: none;
+  }
+  
+  /* Specific mobile container adjustments */
+  .booking-container {
+    /* Keep max-width but ensure proper padding */
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0.5rem;
+  }
+  
+  .booking-iframe-container {
+    /* Full width container on mobile */
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+  }
+}
+
+/* Very small mobile devices */
+@media (max-width: 360px) {
   .booking-iframe-container iframe {
     transform: none;
   }
@@ -277,3 +346,17 @@
     transform: none;
   }
 }
+
+/* Extra mobile fixes for service-menu widget */
+@media (max-width: 480px) {
+  .booking-iframe-container iframe[src*="service-menu"] {
+    /* Ensure full width on small mobile */
+    width: 100% !important;
+    max-width: 100% !important;
+    /* Remove any scaling that might cause issues */
+    transform: none !important;
+    /* Ensure proper height for mobile */
+    min-height: 800px !important;
+  }
+}
+

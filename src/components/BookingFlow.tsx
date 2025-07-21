@@ -153,6 +153,8 @@ export default function BookingFlow() {
                   minHeight: `${iframeHeight}px`,
                   height: '100%',
                   opacity: isLoading ? 0 : 1,
+                  background: 'white',
+                  borderRadius: '8px',
                 }} 
                 scrolling="yes" 
                 id="tLdotUjYkYChCMUNo20b_1753093273731"
@@ -160,6 +162,7 @@ export default function BookingFlow() {
                 onLoad={handleIframeLoad}
                 onError={handleIframeError}
                 allow="fullscreen"
+                frameBorder="0"
               />
             ) : (
               <iframe 
@@ -171,6 +174,8 @@ export default function BookingFlow() {
                   minHeight: `${iframeHeight}px`,
                   height: '100%',
                   opacity: isLoading ? 0 : 1,
+                  background: 'white',
+                  borderRadius: '8px',
                 }} 
                 scrolling="yes" 
                 id="687e11ae7a55e04dfea6ea17_1753093393676"
@@ -178,6 +183,7 @@ export default function BookingFlow() {
                 onLoad={handleIframeLoad}
                 onError={handleIframeError}
                 allow="fullscreen"
+                frameBorder="0"
               />
             )}
           </div>

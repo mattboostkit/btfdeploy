@@ -142,7 +142,7 @@ export default function BookingFlow() {
             </div>
           )}
           
-          <div className="booking-iframe-container">
+          <div className="booking-iframe-container relative">
             {activeCalendar === 'consultation' ? (
               <iframe 
                 src="https://link.boostkit.io/widget/booking/Ktomr74FyLiLn9N4Enpy" 
@@ -153,6 +153,7 @@ export default function BookingFlow() {
                   minHeight: `${iframeHeight}px`,
                   height: '100%',
                   opacity: isLoading ? 0 : 1,
+                  maxWidth: '100%',
                 }} 
                 scrolling="yes" 
                 id="tLdotUjYkYChCMUNo20b_1753093273731"
@@ -171,6 +172,7 @@ export default function BookingFlow() {
                   minHeight: `${iframeHeight}px`,
                   height: '100%',
                   opacity: isLoading ? 0 : 1,
+                  maxWidth: '100%',
                 }} 
                 scrolling="yes" 
                 id="687e11ae7a55e04dfea6ea17_1753093393676"

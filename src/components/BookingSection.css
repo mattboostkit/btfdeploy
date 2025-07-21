@@ -33,7 +33,7 @@
 /* Media queries for different screen sizes */
 @media (max-width: 768px) {
   .booking-iframe-container {
-    min-height: 600px; /* Adjusted for mobile */
+    min-height: 800px; /* Increased for mobile to ensure navigation is visible */
   }
   
   /* Stack tabs vertically on mobile */
@@ -45,16 +45,37 @@
   .booking-section .grid-cols-1 {
     gap: 0.75rem;
   }
+  
+  /* Ensure iframe has enough space on mobile */
+  .booking-iframe-container iframe {
+    min-height: 800px !important;
+  }
 }
 
 @media (max-width: 480px) {
   .booking-iframe-container {
-    min-height: 650px; /* Slightly taller on small mobile */
+    min-height: 900px; /* Even taller on small mobile to ensure full calendar visibility */
   }
   
   /* Reduce padding on mobile */
   .booking-container {
-    padding: 1rem;
+    padding: 0.75rem;
+  }
+  
+  /* Ensure iframe has enough space on small mobile */
+  .booking-iframe-container iframe {
+    min-height: 900px !important;
+  }
+}
+
+/* Extra small mobile devices */
+@media (max-width: 375px) {
+  .booking-iframe-container {
+    min-height: 950px; /* Maximum height for very small screens */
+  }
+  
+  .booking-iframe-container iframe {
+    min-height: 950px !important;
   }
 }
 
@@ -100,11 +121,11 @@
 /* Ensure mobile view has enough space */
 @media (max-width: 480px) {
   .booking-iframe {
-    min-height: 650px; /* Adjusted for mobile */
+    min-height: 900px; /* Increased for mobile */
   }
 
   .booking-iframe-container {
-    min-height: 650px;
+    min-height: 900px;
   }
 }
 
@@ -146,4 +167,32 @@
   .booking-iframe-container iframe {
     -webkit-overflow-scrolling: touch;
   }
+}
+
+/* Additional mobile optimizations for calendar navigation */
+@media (max-width: 768px) {
+  /* Ensure the calendar container doesn't clip navigation elements */
+  .booking-container {
+    overflow: visible;
+  }
+  
+  /* Make sure iframe can scroll if needed */
+  .booking-iframe-container iframe {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Ensure calendar navigation is accessible on all screen sizes */
+.booking-iframe-container {
+  /* Allow the iframe to expand beyond container if needed */
+  overflow: visible;
+}
+
+/* Force iframe to be responsive and accessible */
+.booking-iframe-container iframe {
+  /* Ensure the iframe can be interacted with properly */
+  pointer-events: auto;
+  /* Allow scrolling within the iframe if needed */
+  overflow: auto;
 }

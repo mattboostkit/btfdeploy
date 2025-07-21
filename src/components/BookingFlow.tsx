@@ -10,10 +10,14 @@ export default function BookingFlow() {
   // Adjust iframe height based on screen size
   useEffect(() => {
     const updateIframeHeight = () => {
-      if (window.innerWidth < 768) {
-        setIframeHeight(600); // Mobile height
+      if (window.innerWidth < 375) {
+        setIframeHeight(950); // Extra small mobile
+      } else if (window.innerWidth < 480) {
+        setIframeHeight(900); // Small mobile
+      } else if (window.innerWidth < 768) {
+        setIframeHeight(800); // Mobile/tablet
       } else {
-        setIframeHeight(750); // Desktop height
+        setIframeHeight(750); // Desktop
       }
     };
 
@@ -145,16 +149,17 @@ export default function BookingFlow() {
                 style={{
                   width: '100%',
                   border: 'none',
-                  overflow: 'hidden',
+                  overflow: 'auto',
                   minHeight: `${iframeHeight}px`,
                   height: '100%',
                   opacity: isLoading ? 0 : 1,
                 }} 
-                scrolling="no" 
+                scrolling="yes" 
                 id="tLdotUjYkYChCMUNo20b_1753093273731"
                 title="Initial Consultation Booking"
                 onLoad={handleIframeLoad}
                 onError={handleIframeError}
+                allow="fullscreen"
               />
             ) : (
               <iframe 
@@ -162,16 +167,17 @@ export default function BookingFlow() {
                 style={{
                   width: '100%',
                   border: 'none',
-                  overflow: 'hidden',
+                  overflow: 'auto',
                   minHeight: `${iframeHeight}px`,
                   height: '100%',
                   opacity: isLoading ? 0 : 1,
                 }} 
-                scrolling="no" 
+                scrolling="yes" 
                 id="687e11ae7a55e04dfea6ea17_1753093393676"
                 title="Treatment Booking"
                 onLoad={handleIframeLoad}
                 onError={handleIframeError}
+                allow="fullscreen"
               />
             )}
           </div>

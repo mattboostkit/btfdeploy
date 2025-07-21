@@ -169,74 +169,77 @@
   }
 }
 
-/* Additional mobile optimizations for calendar navigation */
-@media (max-width: 768px) {
-  /* Ensure the calendar container doesn't clip navigation elements */
-  .booking-container {
-    overflow: visible;
-  }
-  
-  /* Make sure iframe can scroll if needed */
-  .booking-iframe-container iframe {
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-}
-
 /* Ensure calendar navigation is accessible on all screen sizes */
 .booking-iframe-container {
   /* Allow the iframe to expand beyond container if needed */
   overflow: visible;
+  /* Ensure container doesn't clip content */
+  position: relative;
 }
 
 /* Force iframe to be responsive and accessible */
 .booking-iframe-container iframe {
   /* Ensure the iframe can be interacted with properly */
   pointer-events: auto;
-  /* Allow scrolling within the iframe if needed */
-  overflow: auto;
+  /* Allow the iframe content to be fully visible */
+  overflow: visible;
+  /* Ensure no clipping of navigation elements */
+  position: relative;
+  z-index: 1;
+}
+
+/* Additional mobile optimizations for calendar navigation */
+@media (max-width: 768px) {
+  /* Ensure the calendar container doesn't clip navigation elements */
+  .booking-container {
+    overflow: visible;
+    /* Remove any padding that might interfere */
+    padding: 0.5rem;
+  }
+  
+  /* Make sure iframe can show all content */
+  .booking-iframe-container iframe {
+    overflow: visible;
+    -webkit-overflow-scrolling: touch;
+  }
 }
 
 /* Critical fix for calendar navigation buttons on mobile */
 @media (max-width: 768px) {
   .booking-iframe-container {
-    /* Ensure the container is wide enough to show navigation buttons */
-    width: 100vw;
-    max-width: 100vw;
-    margin-left: calc(-50vw + 50%);
-    margin-right: calc(-50vw + 50%);
-    padding-left: 1rem;
-    padding-right: 1rem;
-    box-sizing: border-box;
+    /* Ensure the container has enough width for navigation */
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
   }
   
   .booking-iframe-container iframe {
-    /* Ensure iframe takes full width and shows navigation buttons */
+    /* Ensure iframe shows full calendar width */
     width: 100% !important;
     max-width: 100% !important;
-    transform: scale(0.95);
-    transform-origin: center top;
+    /* Remove scaling - let the calendar be its natural size */
+    transform: none;
   }
 }
 
-/* Extra small mobile devices - more aggressive scaling */
+/* Extra small mobile devices */
 @media (max-width: 375px) {
   .booking-iframe-container iframe {
-    transform: scale(0.9);
-    transform-origin: center top;
+    transform: none;
   }
 }
 
 /* Ensure the calendar navigation buttons are always visible */
 .booking-iframe-container {
-  /* Add some padding to ensure buttons don't get cut off */
-  padding: 0 0.5rem;
+  /* Remove padding that might interfere with calendar width */
+  padding: 0;
 }
 
 /* Force the iframe to show the full calendar width */
 .booking-iframe-container iframe {
   /* Remove any max-width constraints that might hide navigation */
-  max-width: none !important;
+  max-width: 100% !important;
   /* Ensure the iframe can expand to show all content */
   width: 100% !important;
 }
@@ -244,11 +247,11 @@
 /* Additional mobile-specific fixes for calendar navigation */
 @media (max-width: 480px) {
   .booking-container {
-    /* Remove max-width constraint on mobile to allow full width */
-    max-width: none;
+    /* Keep max-width but ensure proper padding */
+    max-width: 100%;
     margin-left: 0;
     margin-right: 0;
-    border-radius: 0;
+    padding: 0.5rem;
   }
   
   .booking-iframe-container {
@@ -257,23 +260,20 @@
     max-width: 100%;
     margin-left: 0;
     margin-right: 0;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding: 0;
   }
   
   .booking-iframe-container iframe {
-    /* Ensure iframe shows full calendar width */
+    /* Ensure iframe shows full calendar width without scaling */
     width: 100% !important;
     max-width: 100% !important;
-    transform: scale(0.98);
-    transform-origin: center top;
+    transform: none;
   }
 }
 
 /* Very small mobile devices */
 @media (max-width: 360px) {
   .booking-iframe-container iframe {
-    transform: scale(0.92);
-    transform-origin: center top;
+    transform: none;
   }
 }

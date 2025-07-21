@@ -6,6 +6,7 @@ export default function BookingFlow() {
   const [iframeHeight, setIframeHeight] = useState(750);
   const [isLoading, setIsLoading] = useState(true);
 
+
   // Adjust iframe height based on screen size
   useEffect(() => {
     const updateIframeHeight = () => {
@@ -23,6 +24,12 @@ export default function BookingFlow() {
 
   // Load the BoostKit script
   useEffect(() => {
+    // Check if script is already loaded
+    if (document.querySelector('script[src*="boostkit.io"]')) {
+      setIsLoading(false);
+      return;
+    }
+
     const script = document.createElement('script');
     script.src = 'https://link.boostkit.io/js/form_embed.js';
     script.type = 'text/javascript';
@@ -40,14 +47,18 @@ export default function BookingFlow() {
     document.head.appendChild(script);
 
     return () => {
-      if (document.head.contains(script)) {
-        document.head.removeChild(script);
-      }
+      // Don't remove the script on cleanup as it might be used by other components
     };
   }, []);
 
   // Handle iframe load events
   const handleIframeLoad = () => {
+    setIsLoading(false);
+  };
+
+  // Handle iframe error
+  const handleIframeError = () => {
+    console.error('Failed to load booking iframe');
     setIsLoading(false);
   };
 
@@ -143,6 +154,7 @@ export default function BookingFlow() {
                 id="tLdotUjYkYChCMUNo20b_1753093273731"
                 title="Initial Consultation Booking"
                 onLoad={handleIframeLoad}
+                onError={handleIframeError}
               />
             ) : (
               <iframe 
@@ -159,6 +171,7 @@ export default function BookingFlow() {
                 id="687e11ae7a55e04dfea6ea17_1753093393676"
                 title="Treatment Booking"
                 onLoad={handleIframeLoad}
+                onError={handleIframeError}
               />
             )}
           </div>

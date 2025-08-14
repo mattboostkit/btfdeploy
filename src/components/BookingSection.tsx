@@ -32,7 +32,7 @@ const BookingSection: React.FC = () => {
           </p>
         </div>
 
-        <div className="booking-container mt-10 bg-white p-4 md:p-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl max-w-4xl mx-auto">
+        <div className="booking-container mt-10 bg-white p-2 sm:p-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl max-w-4xl -mx-4 sm:mx-auto">
           <h3 className="text-xl font-medium text-gray-900 mb-4 text-center">Schedule an Appointment</h3>
           <div className="booking-iframe-container">
             {/* Calendar Embed - Increased height to avoid scrolling */}

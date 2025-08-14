@@ -154,12 +154,28 @@
   .booking-section p {
     font-size: 1.125rem; /* text-lg */
   }
+  
+  /* Let the booking card go full-bleed on small screens so arrows are in view */
+  .booking-container {
+    margin-left: -1rem; /* cancel parent px-4 */
+    margin-right: -1rem; /* cancel parent px-4 */
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
 }
 
 /* Ensure iframe responsiveness */
 .booking-iframe-container iframe {
   max-width: 100%;
   box-sizing: border-box;
+}
+
+/* Contain the third-party month arrows within the viewport on mobile */
+.booking-iframe-container::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none; /* allow clicks through */
 }
 
 /* Fix for iOS Safari iframe issues */

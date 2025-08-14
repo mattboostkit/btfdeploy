@@ -134,7 +134,7 @@ export default function BookingFlow() {
         </div>
 
         {/* Calendar Container */}
-        <div className="booking-container mt-10 bg-white p-4 md:p-6 rounded-lg shadow-lg max-w-4xl mx-auto">
+        <div className="booking-container mt-10 bg-white p-2 sm:p-6 rounded-lg shadow-lg max-w-4xl -mx-4 sm:mx-auto">
           {isLoading && (
             <div className="flex items-center justify-center py-8">
               <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary-500"></div>

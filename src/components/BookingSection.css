@@ -185,7 +185,9 @@
   overflow: visible;
   /* Ensure no clipping of navigation elements */
   position: relative;
-  z-index: 1;
+  z-index: 60; /* Above nearby elements so taps aren't intercepted */
+  /* Improve tap responsiveness on mobile Safari */
+  touch-action: manipulation;
 }
 
 /* Ensure both calendar types have consistent styling */

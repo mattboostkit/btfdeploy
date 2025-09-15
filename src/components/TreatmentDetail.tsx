@@ -86,7 +86,7 @@ const TreatmentDetail: React.FC<TreatmentDetailProps> = ({ treatment }) => {
                   Book This Treatment (After Consultation)
                 </Link>
                 <p className="mt-3 text-sm text-gray-600">
-                  You are required to have a £50 consultation which is redeemable against your first treatment before undergoing this treatment.
+                  You are required to have a FREE consultation before undergoing this treatment.
                 </p>
               </>
             ) : (

@@ -10,6 +10,18 @@ import remedialMassageImage from '../assets/images/Massage.jpg';
 
 export const treatments: Treatment[] = [
   {
+    id: '7',
+    name: 'Vivace RF Microneedling with Exosomes',
+    category: 'Lifting and Tightening Skin Treatments',
+    description: 'Vivace RF with Exosomes is a treatment that rejuvenates the skin, restoring a noticeably more youthful appearance. It is particularly effective for thin, sagging skin – especially around the lower face, jawline, and neck – helping to prevent further ageing by lifting, firming, and tightening the skin.',
+    expectedResults: 'Reduced appearance of scars, wrinkles, and enlarged pores. Improved skin texture and firmness.',
+    duration: '90 minutes',
+    recovery: 'Immediate results. No downtime. Up to 24hrs slight redness',
+    price: '350',
+    image: exosomesImage,
+    requiresConsultation: true
+  },
+  {
     id: '4',
     name: 'Vivace RF Microneedling with Exosomes and Remedial Massage',
     category: 'Lifting and Tightening Skin Treatments',
@@ -22,18 +34,6 @@ export const treatments: Treatment[] = [
     requiresConsultation: true
   },
   {
-    id: '7',
-    name: 'Vivace RF Microneedling with Exosomes',
-    category: 'Lifting and Tightening Skin Treatments',
-    description: 'Vivace RF with Exosomes is a treatment that rejuvenates the skin, restoring a noticeably more youthful appearance. It is particularly effective for thin, sagging skin – especially around the lower face, jawline, and neck – helping to prevent further ageing by lifting, firming, and tightening the skin.',
-    expectedResults: 'Reduced appearance of scars, wrinkles, and enlarged pores. Improved skin texture and firmness.',
-    duration: '90 minutes',
-    recovery: 'Immediate results. No downtime. Up to 24hrs slight redness',
-    price: '400',
-    image: exosomesImage,
-    requiresConsultation: true
-  },
-  {
     id: '3',
     name: 'Environ / Theraderm Skin Peel',
     category: 'Lifting and Tightening Skin Treatments',
@@ -41,7 +41,7 @@ export const treatments: Treatment[] = [
     expectedResults: 'Improved skin texture, clarity, and radiance. Addresses specific skin concerns like ageing, pigmentation, or acne.',
     duration: '60 minutes',
     recovery: 'Minimal downtime, possible slight redness for a few hours.',
-    price: '150',
+    price: '99',
     image: environImage,
     requiresConsultation: true
   },
@@ -75,7 +75,7 @@ export const treatments: Treatment[] = [
     expectedResults: 'Visible reduction in fine lines and wrinkles, with results typically lasting 3–4 months.',
     duration: '30 minutes',
     recovery: 'No downtime required. Avoid lying down for 4 hours after treatment.',
-    price: '300',
+    price: '250',
     image: antiWrinkleImage
   },
   {

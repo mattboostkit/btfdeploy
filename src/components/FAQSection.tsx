@@ -145,8 +145,7 @@ const defaultFaqs: FAQItemData[] = [
     answer: (
       <>
         <p>Yes. All patients must attend an initial consultation with Maryna before treatment.</p>
-        <p>💷 Consultation fee: £50</p> {/* Keeping this price as it's specific to the consultation */}
-        <p>✅ This fee is fully redeemable against the cost of your first treatment.</p>
+        <p>💷 Consultation fee: FREE</p>
       </>
     )
   },
